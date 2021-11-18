@@ -17,8 +17,9 @@ header{
     top: 0;
     width: 100%;
     left: 0;
-    background-color: yellow;
+    background-color: rgba(250, 246, 24, 0.986);
     padding: 10px;
+
 }
 
 nav a:visited,
@@ -85,6 +86,7 @@ article{
 .banner{
     max-width: 100%;
     max-height: 65%;
+    border: solid 1px black;
 }
 
 h1{
@@ -93,7 +95,7 @@ h1{
 }
 
 .subtitle{
-    background-color: turquoise;
+    background-color: rgb(99, 194, 226);
     font-size: 0.8em;
     padding: 10px;
     border: solid 1.5px black;
@@ -102,6 +104,11 @@ h1{
 
 .encontrar{
     text-align: left;
+}
+
+.irCat{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -157,5 +164,16 @@ h1{
     border: solid 1px cornflowerblue;
     max-width: 55%;
     max-height: 55%;
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+}
+.ig{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.wp{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpaca digital</title>
+    <link rel="icon" href="images/icoLlama.ico">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalog.html">Catalogo</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <img class="logo" src="images/icono .ico-modified.png" alt="Alpaca Digital">
+        </aside>
+        <article>
+            <h1>Orden </h1>
+            <div class="order-selected">
+                <img class="img-vin" src="" alt="vinilo 1">
+                <div class="elementInformation">
+                    <div class="title">
+                    </div>
+                    <div class="price">
+                    </div>
+                </div>
+            </div>
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+                <div class="input group">
+                    <div>
+                        <label for="first name">
+                            first name
+                        </label>
+                        <div>
+                            <input type="text" name="first name" id="first name">
+                        </div>
+                    </div>
+                </div>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Order">
+            </form>
+        </article>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalog.html">Catalogo</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
+</body>
+<script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const order = localStorage.getItem("order");
+        if(order){
+            const catalgOrder = JSON.parse(order)
+            const orderSelected = document.querySelector(".order-selected");
+            orderSelected.querySelector(".title").innerText = catalgOrder.title;
+            orderSelected.querySelector(".price").innerText = catalgOrder.price;
+            const img = orderSelected.querySelector("img");
+            img.setAttribute("src", `images/${catalgOrder.id}.jfif` )
+        }
+    });
+</script>
+</html>
