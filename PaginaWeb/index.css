@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(152, 183, 240);
+}
+
+header{
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: yellow;
+    padding: 10px;
+}
+
+nav a:visited,
+nav a:link{
+    color: black;
+    text-decoration: none;
+}
+
+nav>ul{
+    display: inline;
+    padding: 0;
+}
+
+nav>ul>li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 3px 0 3px;
+}
+
+main{
+    display: block;
+    background-image: url("images/baack.jpg");
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 85%;
+
+}
+
+footer{
+    padding: 15px;
+    background-color: rgba(250, 246, 24, 0.856);
+    text-align: center;
+}
+
+aside,article{
+    padding: 2em;
+}
+
+aside{
+    max-width: 12%;
+    text-align: center;
+}
+
+article{
+    width: 85%;
+    text-align: center;
+}
+
+@media only screen and (min-width:768px) {
+    main{
+        display: flex;
+    }
+
+    aside{
+        margin-left: 3%;
+    }
+}
+
+.logo{
+    max-width: 99%;
+    max-height: 99%;
+}
+
+.banner{
+    max-width: 100%;
+    max-height: 65%;
+}
+
+h1{
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+.subtitle{
+    background-color: turquoise;
+    font-size: 0.8em;
+    padding: 10px;
+    border: solid 1.5px black;
+    margin-top: 0.5em;
+}
+
+.encontrar{
+    text-align: left;
+}
+
+
+/* CATALOGO */
+
+.element{
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(187, 33, 46);
+    border: solid 1px ;
+    color: white;
+    display: inline-block; /*hace que los cuadrados queden en una sola linea*/
+}
+
+.img-vin{
+    max-width: 100%;
+    max-height: 75%;
+}
+
+.elementInformation{
+    display: block;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0.3em;
+}
+
+.elementInformation .title{
+    font-weight: bold;
+}
+
+.elementInformation .price{
+    text-align: right; 
+
+}
+
+.element button{
+    background-color: cornflowerblue;
+    padding: 10px;
+    border: solid 1px cornflowerblue;
+    border-radius: 3px;
+    margin-top: 0.2em;
+}
+
+    
+
+/* CONTACTO */ 
+
+.encontrar{
+    display: flex;
+    background-attachment: cornflowerblue;
+    padding: 10px;
+    border: solid 1px cornflowerblue;
+    max-width: 55%;
+    max-height: 55%;
+}
+
